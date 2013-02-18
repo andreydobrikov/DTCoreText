@@ -1,0 +1,2712 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DTRichTextEditorView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">DTRichTextEditor </a></h1>
+				<a id="developerHome" href="../index.html">Cocoanetics</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DTRichTextEditorView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attributedText">&nbsp;&nbsp;&nbsp;&nbsp;attributedText</option>
+	
+	<option value="//api/name/baseURL">&nbsp;&nbsp;&nbsp;&nbsp;baseURL</option>
+	
+	<option value="//api/name/canInteractWithPasteboard">&nbsp;&nbsp;&nbsp;&nbsp;canInteractWithPasteboard</option>
+	
+	<option value="//api/name/defaultFontFamily">&nbsp;&nbsp;&nbsp;&nbsp;defaultFontFamily</option>
+	
+	<option value="//api/name/defaultFontSize">&nbsp;&nbsp;&nbsp;&nbsp;defaultFontSize</option>
+	
+	<option value="//api/name/editable">&nbsp;&nbsp;&nbsp;&nbsp;editable</option>
+	
+	<option value="//api/name/inputAccessoryView">&nbsp;&nbsp;&nbsp;&nbsp;inputAccessoryView</option>
+	
+	<option value="//api/name/inputView">&nbsp;&nbsp;&nbsp;&nbsp;inputView</option>
+	
+	<option value="//api/name/maxImageDisplaySize">&nbsp;&nbsp;&nbsp;&nbsp;maxImageDisplaySize</option>
+	
+	<option value="//api/name/replaceParagraphsWithLineFeeds">&nbsp;&nbsp;&nbsp;&nbsp;replaceParagraphsWithLineFeeds</option>
+	
+	<option value="//api/name/textDefaults">&nbsp;&nbsp;&nbsp;&nbsp;textDefaults</option>
+	
+	<option value="//api/name/textSizeMultiplier">&nbsp;&nbsp;&nbsp;&nbsp;textSizeMultiplier</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/applyTextAlignment:toParagraphsContainingRange:">&nbsp;&nbsp;&nbsp;&nbsp;- applyTextAlignment:toParagraphsContainingRange:</option>
+	
+	<option value="//api/name/attributedSubstringForRange:">&nbsp;&nbsp;&nbsp;&nbsp;- attributedSubstringForRange:</option>
+	
+	<option value="//api/name/boundsOfCurrentSelection">&nbsp;&nbsp;&nbsp;&nbsp;- boundsOfCurrentSelection</option>
+	
+	<option value="//api/name/changeParagraphLeftMarginBy:toParagraphsContainingRange:">&nbsp;&nbsp;&nbsp;&nbsp;- changeParagraphLeftMarginBy:toParagraphsContainingRange:</option>
+	
+	<option value="//api/name/fontDescriptorForRange:">&nbsp;&nbsp;&nbsp;&nbsp;- fontDescriptorForRange:</option>
+	
+	<option value="//api/name/layoutLineAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- layoutLineAtIndex:</option>
+	
+	<option value="//api/name/layoutLineContainingTextPosition:">&nbsp;&nbsp;&nbsp;&nbsp;- layoutLineContainingTextPosition:</option>
+	
+	<option value="//api/name/numberOfLayoutLines">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfLayoutLines</option>
+	
+	<option value="//api/name/pasteboardHasSuitableContentForPaste">&nbsp;&nbsp;&nbsp;&nbsp;- pasteboardHasSuitableContentForPaste</option>
+	
+	<option value="//api/name/plainTextForRange:">&nbsp;&nbsp;&nbsp;&nbsp;- plainTextForRange:</option>
+	
+	<option value="//api/name/replaceRange:withAttachment:inParagraph:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceRange:withAttachment:inParagraph:</option>
+	
+	<option value="//api/name/replaceRange:withText:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceRange:withText:</option>
+	
+	<option value="//api/name/scrollCursorVisibleAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollCursorVisibleAnimated:</option>
+	
+	<option value="//api/name/setFont:">&nbsp;&nbsp;&nbsp;&nbsp;- setFont:</option>
+	
+	<option value="//api/name/setHTMLString:">&nbsp;&nbsp;&nbsp;&nbsp;- setHTMLString:</option>
+	
+	<option value="//api/name/setSelectedTextRange:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setSelectedTextRange:animated:</option>
+	
+	<option value="//api/name/textAttachmentsWithPredicate:">&nbsp;&nbsp;&nbsp;&nbsp;- textAttachmentsWithPredicate:</option>
+	
+	<option value="//api/name/textRangeOfDictationPlaceholder">&nbsp;&nbsp;&nbsp;&nbsp;- textRangeOfDictationPlaceholder</option>
+	
+	<option value="//api/name/textRangeOfParagraphsContainingRange:">&nbsp;&nbsp;&nbsp;&nbsp;- textRangeOfParagraphsContainingRange:</option>
+	
+	<option value="//api/name/textRangeOfURLAtPosition:URL:">&nbsp;&nbsp;&nbsp;&nbsp;- textRangeOfURLAtPosition:URL:</option>
+	
+	<option value="//api/name/textRangeOfWordAtPosition:">&nbsp;&nbsp;&nbsp;&nbsp;- textRangeOfWordAtPosition:</option>
+	
+	<option value="//api/name/toggleBoldInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleBoldInRange:</option>
+	
+	<option value="//api/name/toggleHighlightInRange:color:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleHighlightInRange:color:</option>
+	
+	<option value="//api/name/toggleHyperlinkInRange:URL:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleHyperlinkInRange:URL:</option>
+	
+	<option value="//api/name/toggleItalicInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleItalicInRange:</option>
+	
+	<option value="//api/name/toggleListStyle:inRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleListStyle:inRange:</option>
+	
+	<option value="//api/name/toggleUnderlineInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleUnderlineInRange:</option>
+	
+	<option value="//api/name/typingAttributesForRange:">&nbsp;&nbsp;&nbsp;&nbsp;- typingAttributesForRange:</option>
+	
+	<option value="//api/name/updateFontInRange:withFontFamilyName:pointSize:">&nbsp;&nbsp;&nbsp;&nbsp;- updateFontInRange:withFontFamilyName:pointSize:</option>
+	
+	<option value="//api/name/visibleLayoutLines">&nbsp;&nbsp;&nbsp;&nbsp;- visibleLayoutLines</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting Text Defaults">Setting Text Defaults</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Views">Accessing Views</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifying Text Content">Modifying Text Content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Cursor and Selection">Cursor and Selection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Information">Getting Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Dictation Methods">Dictation Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manipulation Methods">Manipulation Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_DTCoreText Methods">DTCoreText Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributedText">attributedText</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseURL">baseURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canInteractWithPasteboard">canInteractWithPasteboard</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultFontFamily">defaultFontFamily</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultFontSize">defaultFontSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editable">editable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputAccessoryView">inputAccessoryView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputView">inputView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxImageDisplaySize">maxImageDisplaySize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceParagraphsWithLineFeeds">replaceParagraphsWithLineFeeds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textDefaults">textDefaults</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textSizeMultiplier">textSizeMultiplier</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyTextAlignment:toParagraphsContainingRange:">applyTextAlignment:toParagraphsContainingRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributedSubstringForRange:">attributedSubstringForRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundsOfCurrentSelection">boundsOfCurrentSelection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeParagraphLeftMarginBy:toParagraphsContainingRange:">changeParagraphLeftMarginBy:toParagraphsContainingRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fontDescriptorForRange:">fontDescriptorForRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layoutLineAtIndex:">layoutLineAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layoutLineContainingTextPosition:">layoutLineContainingTextPosition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfLayoutLines">numberOfLayoutLines</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pasteboardHasSuitableContentForPaste">pasteboardHasSuitableContentForPaste</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/plainTextForRange:">plainTextForRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceRange:withAttachment:inParagraph:">replaceRange:withAttachment:inParagraph:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceRange:withText:">replaceRange:withText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollCursorVisibleAnimated:">scrollCursorVisibleAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFont:">setFont:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHTMLString:">setHTMLString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSelectedTextRange:animated:">setSelectedTextRange:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textAttachmentsWithPredicate:">textAttachmentsWithPredicate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textRangeOfDictationPlaceholder">textRangeOfDictationPlaceholder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textRangeOfParagraphsContainingRange:">textRangeOfParagraphsContainingRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textRangeOfURLAtPosition:URL:">textRangeOfURLAtPosition:URL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textRangeOfWordAtPosition:">textRangeOfWordAtPosition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleBoldInRange:">toggleBoldInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleHighlightInRange:color:">toggleHighlightInRange:color:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleHyperlinkInRange:URL:">toggleHyperlinkInRange:URL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleItalicInRange:">toggleItalicInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleListStyle:inRange:">toggleListStyle:inRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleUnderlineInRange:">toggleUnderlineInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/typingAttributesForRange:">typingAttributesForRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateFontInRange:withFontFamilyName:pointSize:">updateFontInRange:withFontFamilyName:pointSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/visibleLayoutLines">visibleLayoutLines</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DTRichTextEditorView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DTRichTextEditorView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">DTAttributedTextView</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UITextInput<br />UITextInputTraits</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DTRichTextEditorView.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>DTRichTextEditorView is a subclass of UIScrollView and offers rich text edtiting capabilities. It has a single content view of type <a href="../Classes/DTRichTextEditorContentView.html">DTRichTextEditorContentView</a> which is repsonsible for displaying the rich text.</p>
+
+<p>The <strong>Dictation</strong> category contains methods to support dictation input.</p>
+
+<p>The <strong>Manipulation</strong> category enhances DTRichTextEditorView with useful text format manipulation methods.</p>
+
+<p>The <strong>DTCore Text Category</strong> features enhancements for DTRichTextEditorView to interact with DTCoreText internal information.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Setting Text Defaults" name="task_Setting Text Defaults"></a>
+						<h3 class="subsubtitle task-title">Setting Text Defaults</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxImageDisplaySize">&nbsp;&nbsp;maxImageDisplaySize</a></code>
+		<span class="tooltip"><p>Override for the maximum image display size.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultFontFamily">&nbsp;&nbsp;defaultFontFamily</a></code>
+		<span class="tooltip"><p>Override for the default font family.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultFontSize">&nbsp;&nbsp;defaultFontSize</a></code>
+		<span class="tooltip"><p>Override for the default font size.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseURL">&nbsp;&nbsp;baseURL</a></code>
+		<span class="tooltip"><p>Override for the base URL.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textSizeMultiplier">&nbsp;&nbsp;textSizeMultiplier</a></code>
+		<span class="tooltip"><p>Override for the text size multiplier.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textDefaults">&nbsp;&nbsp;textDefaults</a></code>
+		<span class="tooltip"><p>The default options to be used for text. See the options parameter of <DTHTMLAttributedStringBuilder> for individual options.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Views" name="task_Accessing Views"></a>
+						<h3 class="subsubtitle task-title">Accessing Views</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputView">&nbsp;&nbsp;inputView</a></code>
+		<span class="tooltip"><p>Overrides the <code>UIResponder</code> input view to be settable. The inputView is show instead of the system keyboard when input is possible.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputAccessoryView">&nbsp;&nbsp;inputAccessoryView</a></code>
+		<span class="tooltip"><p>Overrides the <code>UIResponder</code> input accessory view to be settable. The accessory gets shown riding on top of the <a href="#//api/name/inputView">inputView</a> when input is possible.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Modifying Text Content" name="task_Modifying Text Content"></a>
+						<h3 class="subsubtitle task-title">Modifying Text Content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceRange:withText:">&ndash;&nbsp;replaceRange:withText:</a></code>
+		<span class="tooltip"><p>Replaces a range of text. The current selection is adapted, too.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Cursor and Selection" name="task_Cursor and Selection"></a>
+						<h3 class="subsubtitle task-title">Cursor and Selection</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollCursorVisibleAnimated:">&ndash;&nbsp;scrollCursorVisibleAnimated:</a></code>
+		<span class="tooltip"><p>Scrolls the receiver&rsquo;s content view so that the cursor is visible.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSelectedTextRange:animated:">&ndash;&nbsp;setSelectedTextRange:animated:</a></code>
+		<span class="tooltip"><p>Changes the current text selection range to the new value. Can optionally be animated.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting Information" name="task_Getting Information"></a>
+						<h3 class="subsubtitle task-title">Getting Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundsOfCurrentSelection">&ndash;&nbsp;boundsOfCurrentSelection</a></code>
+		<span class="tooltip"><p>Gets the bounds of the rectangle that encloses the cursor or an envelope around the current selection. Can be used for the target area of a context menu.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canInteractWithPasteboard">&nbsp;&nbsp;canInteractWithPasteboard</a></code>
+		<span class="tooltip"><p>Property to enable copy/paste support. If enabled the user can paste text into DTRichTextEditorView or copy text to the pasteboard.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editable">&nbsp;&nbsp;editable</a></code>
+		<span class="tooltip"><p>Specifies that the receiver can be edited. That means that on tapping it it becomes first responder and shows the current input view (keyboard). If it is not editable then dragging the finger over the view highlights entire words and does not show the selection dragging handles.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceParagraphsWithLineFeeds">&nbsp;&nbsp;replaceParagraphsWithLineFeeds</a></code>
+		<span class="tooltip"><p>If this property is <code>YES</code> then all typed enters are replaced with the Line Feed (LF) character.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributedText">&nbsp;&nbsp;attributedText</a></code>
+		<span class="tooltip"><p>The current attributedText displayed in the receiver</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Dictation Methods" name="task_Dictation Methods"></a>
+						<h3 class="subsubtitle task-title">Dictation Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textRangeOfDictationPlaceholder">&ndash;&nbsp;textRangeOfDictationPlaceholder</a></code>
+		<span class="tooltip"><p>Retrieves the range of the first dictation placeholder in the text.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Manipulation Methods" name="task_Manipulation Methods"></a>
+						<h3 class="subsubtitle task-title">Manipulation Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributedSubstringForRange:">&ndash;&nbsp;attributedSubstringForRange:</a></code>
+		<span class="tooltip"><p>Retrieves that attributed substring for the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/plainTextForRange:">&ndash;&nbsp;plainTextForRange:</a></code>
+		<span class="tooltip"><p>Prepares a plain-text representation of the substring for the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setHTMLString:">&ndash;&nbsp;setHTMLString:</a></code>
+		<span class="tooltip"><p>Converts the given string to an <code>NSAttributedString</code> using the current <a href="#//api/name/textDefaults">textDefaults</a> and sets it on the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textRangeOfURLAtPosition:URL:">&ndash;&nbsp;textRangeOfURLAtPosition:URL:</a></code>
+		<span class="tooltip"><p>Gets the text range of an URL at the given text position. Optionally also returns the hyperlink URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textRangeOfWordAtPosition:">&ndash;&nbsp;textRangeOfWordAtPosition:</a></code>
+		<span class="tooltip"><p>Gets the range that encompasses the word at the given text position.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/typingAttributesForRange:">&ndash;&nbsp;typingAttributesForRange:</a></code>
+		<span class="tooltip"><p>The attributes to apply for new text inserted at the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textRangeOfParagraphsContainingRange:">&ndash;&nbsp;textRangeOfParagraphsContainingRange:</a></code>
+		<span class="tooltip"><p>Extends the given range to include all full paragraphs that contain it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyTextAlignment:toParagraphsContainingRange:">&ndash;&nbsp;applyTextAlignment:toParagraphsContainingRange:</a></code>
+		<span class="tooltip"><p>Applies the given text alignment to all paragraphs that are encompassing the given text range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeParagraphLeftMarginBy:toParagraphsContainingRange:">&ndash;&nbsp;changeParagraphLeftMarginBy:toParagraphsContainingRange:</a></code>
+		<span class="tooltip"><p>Changes the paragraph indentation by the given amount.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleListStyle:inRange:">&ndash;&nbsp;toggleListStyle:inRange:</a></code>
+		<span class="tooltip"><p>Toggles a list style on a given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleBoldInRange:">&ndash;&nbsp;toggleBoldInRange:</a></code>
+		<span class="tooltip"><p>Toggles bold font style on the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleItalicInRange:">&ndash;&nbsp;toggleItalicInRange:</a></code>
+		<span class="tooltip"><p>Toggles italic font style on the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleUnderlineInRange:">&ndash;&nbsp;toggleUnderlineInRange:</a></code>
+		<span class="tooltip"><p>Toggles underline font style on the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleHighlightInRange:color:">&ndash;&nbsp;toggleHighlightInRange:color:</a></code>
+		<span class="tooltip"><p>Highlights a given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleHyperlinkInRange:URL:">&ndash;&nbsp;toggleHyperlinkInRange:URL:</a></code>
+		<span class="tooltip"><p>Toggles a hyperlink on the given range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateFontInRange:withFontFamilyName:pointSize:">&ndash;&nbsp;updateFontInRange:withFontFamilyName:pointSize:</a></code>
+		<span class="tooltip"><p>Replaces the font for a given range preserving bold or italic ranges.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fontDescriptorForRange:">&ndash;&nbsp;fontDescriptorForRange:</a></code>
+		<span class="tooltip"><p>Returns a font descriptor that matches the font at the given range. The method calls <a href="#//api/name/typingAttributesForRange:">typingAttributesForRange:</a> and converts the font to a font descriptor.
+If the range is empty then the font matches what it would be if the user would start typing. If the range is not empty then it is the font of the first character in the range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFont:">&ndash;&nbsp;setFont:</a></code>
+		<span class="tooltip"><p>Convenience method to set the <a href="#//api/name/defaultFontFamily">defaultFontFamily</a> and <a href="#//api/name/defaultFontSize">defaultFontSize</a> to the given font&rsquo;s values. Updates the entire string with this.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceRange:withAttachment:inParagraph:">&ndash;&nbsp;replaceRange:withAttachment:inParagraph:</a></code>
+		<span class="tooltip"><p>Inserts an attachment in the given text range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textAttachmentsWithPredicate:">&ndash;&nbsp;textAttachmentsWithPredicate:</a></code>
+		<span class="tooltip"><p>Retrieving the attachments that match a predicate.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pasteboardHasSuitableContentForPaste">&ndash;&nbsp;pasteboardHasSuitableContentForPaste</a></code>
+		<span class="tooltip"><p>Determines if there is something on the pasteboard that can be pasted into the receiver.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="DTCoreText Methods" name="task_DTCoreText Methods"></a>
+						<h3 class="subsubtitle task-title">DTCoreText Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfLayoutLines">&ndash;&nbsp;numberOfLayoutLines</a></code>
+		<span class="tooltip"><p>The number of text lines in the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layoutLineAtIndex:">&ndash;&nbsp;layoutLineAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the layout line at the given string index</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layoutLineContainingTextPosition:">&ndash;&nbsp;layoutLineContainingTextPosition:</a></code>
+		<span class="tooltip"><p>Returns the layout line that contains the given text position.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/visibleLayoutLines">&ndash;&nbsp;visibleLayoutLines</a></code>
+		<span class="tooltip"><p>An array of layout lines that is currently visible in the receiver.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attributedText" title="attributedText"></a>
+	<h3 class="subsubtitle method-title">attributedText</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current attributedText displayed in the receiver</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSAttributedString *attributedText</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/baseURL" title="baseURL"></a>
+	<h3 class="subsubtitle method-title">baseURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override for the base URL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSURL *baseURL</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents part of the <a href="#//api/name/textDefaults">textDefaults</a>. Setting those will set this property and vice versa.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/canInteractWithPasteboard" title="canInteractWithPasteboard"></a>
+	<h3 class="subsubtitle method-title">canInteractWithPasteboard</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property to enable copy/paste support. If enabled the user can paste text into DTRichTextEditorView or copy text to the pasteboard.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL canInteractWithPasteboard</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultFontFamily" title="defaultFontFamily"></a>
+	<h3 class="subsubtitle method-title">defaultFontFamily</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override for the default font family.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *defaultFontFamily</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents part of the <a href="#//api/name/textDefaults">textDefaults</a>. Setting those will set this property and vice versa.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultFontSize" title="defaultFontSize"></a>
+	<h3 class="subsubtitle method-title">defaultFontSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override for the default font size.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat defaultFontSize</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents part of the <a href="#//api/name/textDefaults">textDefaults</a>. Setting those will set this property and vice versa.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editable" title="editable"></a>
+	<h3 class="subsubtitle method-title">editable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies that the receiver can be edited. That means that on tapping it it becomes first responder and shows the current input view (keyboard). If it is not editable then dragging the finger over the view highlights entire words and does not show the selection dragging handles.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, getter=isEditable) BOOL editable</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputAccessoryView" title="inputAccessoryView"></a>
+	<h3 class="subsubtitle method-title">inputAccessoryView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overrides the <code>UIResponder</code> input accessory view to be settable. The accessory gets shown riding on top of the <a href="#//api/name/inputView">inputView</a> when input is possible.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) UIView *inputAccessoryView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputView" title="inputView"></a>
+	<h3 class="subsubtitle method-title">inputView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overrides the <code>UIResponder</code> input view to be settable. The inputView is show instead of the system keyboard when input is possible.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) UIView *inputView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxImageDisplaySize" title="maxImageDisplaySize"></a>
+	<h3 class="subsubtitle method-title">maxImageDisplaySize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override for the maximum image display size.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize maxImageDisplaySize</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents part of the <a href="#//api/name/textDefaults">textDefaults</a>. Setting those will set this property and vice versa.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceParagraphsWithLineFeeds" title="replaceParagraphsWithLineFeeds"></a>
+	<h3 class="subsubtitle method-title">replaceParagraphsWithLineFeeds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this property is <code>YES</code> then all typed enters are replaced with the Line Feed (LF) character.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL replaceParagraphsWithLineFeeds</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> This causes all text to end up in a single paragraph and all paragraph-level styles are going to affect all of the text. It therefore severely affects the display performance. We recommend you don&rsquo;t activate this if you don&rsquo;t want spaces between paragraphs but rather set the paragraph spacing to zero via a custom style set via <a href="#//api/name/textDefaults">textDefaults</a>.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textDefaults" title="textDefaults"></a>
+	<h3 class="subsubtitle method-title">textDefaults</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The default options to be used for text. See the options parameter of <DTHTMLAttributedStringBuilder> for individual options.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDictionary *textDefaults</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If one of these properties is set then it is used instead of the value contained in textDefaults:</p>
+
+<ul>
+<li><a href="#//api/name/maxImageDisplaySize">maxImageDisplaySize</a></li>
+<li><a href="#//api/name/defaultFontFamily">defaultFontFamily</a></li>
+<li><a href="#//api/name/defaultFontSize">defaultFontSize</a></li>
+<li><a href="#//api/name/baseURL">baseURL</a>;</li>
+<li><a href="#//api/name/textSizeMultiplier">textSizeMultiplier</a>;</li>
+</ul>
+
+
+<p>NOTE: Changing these defaults does not affect the current <code>NSAttributedString</code>. They are used when calling setHTMLString.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textSizeMultiplier" title="textSizeMultiplier"></a>
+	<h3 class="subsubtitle method-title">textSizeMultiplier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override for the text size multiplier.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat textSizeMultiplier</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents part of the <a href="#//api/name/textDefaults">textDefaults</a>. Setting those will set this property and vice versa.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/applyTextAlignment:toParagraphsContainingRange:" title="applyTextAlignment:toParagraphsContainingRange:"></a>
+	<h3 class="subsubtitle method-title">applyTextAlignment:toParagraphsContainingRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Applies the given text alignment to all paragraphs that are encompassing the given text range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)applyTextAlignment:(CTTextAlignment)<em>alignment</em> toParagraphsContainingRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>The text alignment to apply</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if at least one paragraph&rsquo;s alignment was changed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attributedSubstringForRange:" title="attributedSubstringForRange:"></a>
+	<h3 class="subsubtitle method-title">attributedSubstringForRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves that attributed substring for the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSAttributedString *)attributedSubstringForRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <code>NSAttributedString</code> substring</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/boundsOfCurrentSelection" title="boundsOfCurrentSelection"></a>
+	<h3 class="subsubtitle method-title">boundsOfCurrentSelection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the bounds of the rectangle that encloses the cursor or an envelope around the current selection. Can be used for the target area of a context menu.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGRect)boundsOfCurrentSelection</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeParagraphLeftMarginBy:toParagraphsContainingRange:" title="changeParagraphLeftMarginBy:toParagraphsContainingRange:"></a>
+	<h3 class="subsubtitle method-title">changeParagraphLeftMarginBy:toParagraphsContainingRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the paragraph indentation by the given amount.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)changeParagraphLeftMarginBy:(CGFloat)<em>delta</em> toParagraphsContainingRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delta</em></dt>
+			<dd><p>The amont to modify the left indentation by.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This modifies both the firstLineHeadIndent as well as the headIndent properties of the paragraph styles.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fontDescriptorForRange:" title="fontDescriptorForRange:"></a>
+	<h3 class="subsubtitle method-title">fontDescriptorForRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a font descriptor that matches the font at the given range. The method calls <a href="#//api/name/typingAttributesForRange:">typingAttributesForRange:</a> and converts the font to a font descriptor.
+If the range is empty then the font matches what it would be if the user would start typing. If the range is not empty then it is the font of the first character in the range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DTCoreTextFontDescriptor *)fontDescriptorForRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range in the attributed string for which to query the font</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The font descriptor</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layoutLineAtIndex:" title="layoutLineAtIndex:"></a>
+	<h3 class="subsubtitle method-title">layoutLineAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the layout line at the given string index</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DTCoreTextLayoutLine *)layoutLineAtIndex:(NSUInteger)<em>lineIndex</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lineIndex</em></dt>
+			<dd><p>The index of the line</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the layout line</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+DTCoreText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layoutLineContainingTextPosition:" title="layoutLineContainingTextPosition:"></a>
+	<h3 class="subsubtitle method-title">layoutLineContainingTextPosition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the layout line that contains the given text position.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DTCoreTextLayoutLine *)layoutLineContainingTextPosition:(DTTextPosition *)<em>textPosition</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>textPosition</em></dt>
+			<dd><p>The text position</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the layout line</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+DTCoreText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfLayoutLines" title="numberOfLayoutLines"></a>
+	<h3 class="subsubtitle method-title">numberOfLayoutLines</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of text lines in the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)numberOfLayoutLines</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The number of text lines in the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+DTCoreText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pasteboardHasSuitableContentForPaste" title="pasteboardHasSuitableContentForPaste"></a>
+	<h3 class="subsubtitle method-title">pasteboardHasSuitableContentForPaste</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Determines if there is something on the pasteboard that can be pasted into the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)pasteboardHasSuitableContentForPaste</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if something can be pasted</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/plainTextForRange:" title="plainTextForRange:"></a>
+	<h3 class="subsubtitle method-title">plainTextForRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Prepares a plain-text representation of the substring for the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)plainTextForRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A substring of the receivers current contents</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the attributed string in this range contains attachments then those are removed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceRange:withAttachment:inParagraph:" title="replaceRange:withAttachment:inParagraph:"></a>
+	<h3 class="subsubtitle method-title">replaceRange:withAttachment:inParagraph:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts an attachment in the given text range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)replaceRange:(UITextRange *)<em>range</em> withAttachment:(DTTextAttachment *)<em>attachment</em> inParagraph:(BOOL)<em>inParagraph</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range for the insertion</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attachment</em></dt>
+			<dd><p>The text attachment to be inserted</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inParagraph</em></dt>
+			<dd><p>If <code>YES</code> then the method makes sure that the attachment sits in its own paragraph</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceRange:withText:" title="replaceRange:withText:"></a>
+	<h3 class="subsubtitle method-title">replaceRange:withText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replaces a range of text. The current selection is adapted, too.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)replaceRange:(UITextRange *)<em>range</em> withText:(id)<em>text</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range to replace</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>The text for the replacement</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is an overwritten method that accepts either an <code>NSString</code> or <code>NSAttributedString</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollCursorVisibleAnimated:" title="scrollCursorVisibleAnimated:"></a>
+	<h3 class="subsubtitle method-title">scrollCursorVisibleAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Scrolls the receiver&rsquo;s content view so that the cursor is visible.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)scrollCursorVisibleAnimated:(BOOL)<em>animated</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>If <code>YES</code> then the view is scrolled animated. If <code>NO</code> it jumps to the scroll position</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFont:" title="setFont:"></a>
+	<h3 class="subsubtitle method-title">setFont:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method to set the <a href="#//api/name/defaultFontFamily">defaultFontFamily</a> and <a href="#//api/name/defaultFontSize">defaultFontSize</a> to the given font&rsquo;s values. Updates the entire string with this.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setFont:(UIFont *)<em>font</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The font to use the values from</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setHTMLString:" title="setHTMLString:"></a>
+	<h3 class="subsubtitle method-title">setHTMLString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Converts the given string to an <code>NSAttributedString</code> using the current <a href="#//api/name/textDefaults">textDefaults</a> and sets it on the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setHTMLString:(NSString *)<em>string</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The string containing HTML text to convert to an attributed string and set as content of the receiver</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSelectedTextRange:animated:" title="setSelectedTextRange:animated:"></a>
+	<h3 class="subsubtitle method-title">setSelectedTextRange:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the current text selection range to the new value. Can optionally be animated.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setSelectedTextRange:(DTTextRange *)<em>newTextRange</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newTextRange</em></dt>
+			<dd><p>The new text range to select</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>If <code>YES</code> then an extension (e.g. to include a full word) is animated</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textAttachmentsWithPredicate:" title="textAttachmentsWithPredicate:"></a>
+	<h3 class="subsubtitle method-title">textAttachmentsWithPredicate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieving the attachments that match a predicate.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)textAttachmentsWithPredicate:(NSPredicate *)<em>predicate</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>predicate</em></dt>
+			<dd><p>The <code>NSPredicate</code> that will be used to check the DTTextAttachment key values against</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of matching attachments</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textRangeOfDictationPlaceholder" title="textRangeOfDictationPlaceholder"></a>
+	<h3 class="subsubtitle method-title">textRangeOfDictationPlaceholder</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the range of the first dictation placeholder in the text.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UITextRange *)textRangeOfDictationPlaceholder</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The selection range</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can use this to replace the dictation placeholder with the recognized text.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Dictation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textRangeOfParagraphsContainingRange:" title="textRangeOfParagraphsContainingRange:"></a>
+	<h3 class="subsubtitle method-title">textRangeOfParagraphsContainingRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Extends the given range to include all full paragraphs that contain it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UITextRange *)textRangeOfParagraphsContainingRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The extended range</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textRangeOfURLAtPosition:URL:" title="textRangeOfURLAtPosition:URL:"></a>
+	<h3 class="subsubtitle method-title">textRangeOfURLAtPosition:URL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the text range of an URL at the given text position. Optionally also returns the hyperlink URL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UITextRange *)textRangeOfURLAtPosition:(UITextPosition *)<em>position</em> URL:(NSURL **)<em>URL</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The text position</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>An optional URL output param or <code>NULL</code> if the URL is not required</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the text range or <code>NULL</code> if there is no URL at this position</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textRangeOfWordAtPosition:" title="textRangeOfWordAtPosition:"></a>
+	<h3 class="subsubtitle method-title">textRangeOfWordAtPosition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the range that encompasses the word at the given text position.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UITextRange *)textRangeOfWordAtPosition:(UITextPosition *)<em>position</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The text position</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the text range</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleBoldInRange:" title="toggleBoldInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleBoldInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles bold font style on the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleBoldInRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The first character of the range determines if the range is to be treated as bold or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleHighlightInRange:color:" title="toggleHighlightInRange:color:"></a>
+	<h3 class="subsubtitle method-title">toggleHighlightInRange:color:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Highlights a given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleHighlightInRange:(UITextRange *)<em>range</em> color:(UIColor *)<em>color</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The highlight color to mark the range with. If the range is already marked then this parameter is ignored.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The first character of the range determines if the range is to be treated as already highlighted or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleHyperlinkInRange:URL:" title="toggleHyperlinkInRange:URL:"></a>
+	<h3 class="subsubtitle method-title">toggleHyperlinkInRange:URL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles a hyperlink on the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleHyperlinkInRange:(UITextRange *)<em>range</em> URL:(NSURL *)<em>URL</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The hyperlink URL to set on the range with. If the range already has a hyperlink then this parameter is ignored.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The first character of the range determines if the range is to be treated as already hyperlinked or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleItalicInRange:" title="toggleItalicInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleItalicInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles italic font style on the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleItalicInRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The first character of the range determines if the range is to be treated as italic or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleListStyle:inRange:" title="toggleListStyle:inRange:"></a>
+	<h3 class="subsubtitle method-title">toggleListStyle:inRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles a list style on a given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleListStyle:(DTCSSListStyle *)<em>listStyle</em> inRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listStyle</em></dt>
+			<dd><p>the list style to toggle</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleUnderlineInRange:" title="toggleUnderlineInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleUnderlineInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles underline font style on the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleUnderlineInRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The first character of the range determines if the range is to be treated as underlined or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/typingAttributesForRange:" title="typingAttributesForRange:"></a>
+	<h3 class="subsubtitle method-title">typingAttributesForRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The attributes to apply for new text inserted at the given range.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)typingAttributesForRange:(UITextRange *)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The dictionary of styles</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateFontInRange:withFontFamilyName:pointSize:" title="updateFontInRange:withFontFamilyName:pointSize:"></a>
+	<h3 class="subsubtitle method-title">updateFontInRange:withFontFamilyName:pointSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replaces the font for a given range preserving bold or italic ranges.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updateFontInRange:(UITextRange *)<em>range</em> withFontFamilyName:(NSString *)<em>fontFamilyName</em> pointSize:(CGFloat)<em>pointSize</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The text range</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fontFamilyName</em></dt>
+			<dd><p>The postscript font family name, or <code>nil</code> if the font family should be preserved.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pointSize</em></dt>
+			<dd><p>The point size in pixels to apply, or 0 if it should be preserved</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+Manipulation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/visibleLayoutLines" title="visibleLayoutLines"></a>
+	<h3 class="subsubtitle method-title">visibleLayoutLines</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of layout lines that is currently visible in the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)visibleLayoutLines</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of layout lines that is currently visible in the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTRichTextEditorView+DTCoreText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cocoanetics. All rights reserved. (Last updated: 2013-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSMutableAttributedString(DTRichText) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">DTRichTextEditor </a></h1>
+				<a id="developerHome" href="../index.html">Cocoanetics</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSMutableAttributedString(DTRichText) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addMarkersForSelectionRange:">&nbsp;&nbsp;&nbsp;&nbsp;- addMarkersForSelectionRange:</option>
+	
+	<option value="//api/name/correctParagraphSpacingForRange:">&nbsp;&nbsp;&nbsp;&nbsp;- correctParagraphSpacingForRange:</option>
+	
+	<option value="//api/name/enumerateAndUpdateFontInRange:block:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateAndUpdateFontInRange:block:</option>
+	
+	<option value="//api/name/enumerateAndUpdateParagraphStylesInRange:block:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateAndUpdateParagraphStylesInRange:block:</option>
+	
+	<option value="//api/name/markedRangeRemove:">&nbsp;&nbsp;&nbsp;&nbsp;- markedRangeRemove:</option>
+	
+	<option value="//api/name/replaceFont:inRange:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceFont:inRange:</option>
+	
+	<option value="//api/name/replaceRange:withAttachment:inParagraph:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceRange:withAttachment:inParagraph:</option>
+	
+	<option value="//api/name/toggleBoldInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleBoldInRange:</option>
+	
+	<option value="//api/name/toggleHighlightInRange:color:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleHighlightInRange:color:</option>
+	
+	<option value="//api/name/toggleHyperlinkInRange:URL:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleHyperlinkInRange:URL:</option>
+	
+	<option value="//api/name/toggleItalicInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleItalicInRange:</option>
+	
+	<option value="//api/name/toggleListStyle:inRange:numberFrom:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleListStyle:inRange:numberFrom:</option>
+	
+	<option value="//api/name/toggleParagraphSpacing:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleParagraphSpacing:atIndex:</option>
+	
+	<option value="//api/name/toggleUnderlineInRange:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleUnderlineInRange:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifying Text">Modifying Text</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Toggling Styles">Toggling Styles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Fonts">Working with Fonts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Paragraph Styles">Working with Paragraph Styles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Lists">Working with Lists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Marking Ranges">Marking Ranges</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addMarkersForSelectionRange:">addMarkersForSelectionRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/correctParagraphSpacingForRange:">correctParagraphSpacingForRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateAndUpdateFontInRange:block:">enumerateAndUpdateFontInRange:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateAndUpdateParagraphStylesInRange:block:">enumerateAndUpdateParagraphStylesInRange:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markedRangeRemove:">markedRangeRemove:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceFont:inRange:">replaceFont:inRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceRange:withAttachment:inParagraph:">replaceRange:withAttachment:inParagraph:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleBoldInRange:">toggleBoldInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleHighlightInRange:color:">toggleHighlightInRange:color:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleHyperlinkInRange:URL:">toggleHyperlinkInRange:URL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleItalicInRange:">toggleItalicInRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleListStyle:inRange:numberFrom:">toggleListStyle:inRange:numberFrom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleParagraphSpacing:atIndex:">toggleParagraphSpacing:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleUnderlineInRange:">toggleUnderlineInRange:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSMutableAttributedString(DTRichText) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSMutableAttributedString(DTRichText) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSMutableAttributedString+DTRichText.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Methods extensing <code>NSMutableAttributedString</code> for use with editors</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Modifying Text" name="task_Modifying Text"></a>
+						<h3 class="subsubtitle task-title">Modifying Text</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceRange:withAttachment:inParagraph:">&ndash;&nbsp;replaceRange:withAttachment:inParagraph:</a></code>
+		<span class="tooltip"><p>Convenience method to insert a DTTextAttachment.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Toggling Styles" name="task_Toggling Styles"></a>
+						<h3 class="subsubtitle task-title">Toggling Styles</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleBoldInRange:">&ndash;&nbsp;toggleBoldInRange:</a></code>
+		<span class="tooltip"><p>Toggles the given string range between bold and non-bold.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleItalicInRange:">&ndash;&nbsp;toggleItalicInRange:</a></code>
+		<span class="tooltip"><p>Toggles the given string range between italic and non-italic.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleUnderlineInRange:">&ndash;&nbsp;toggleUnderlineInRange:</a></code>
+		<span class="tooltip"><p>Toggles the given string range between underline and non-underline.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleHighlightInRange:color:">&ndash;&nbsp;toggleHighlightInRange:color:</a></code>
+		<span class="tooltip"><p>Toggles the given string range between highlighted and non-highlighted.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleHyperlinkInRange:URL:">&ndash;&nbsp;toggleHyperlinkInRange:URL:</a></code>
+		<span class="tooltip"><p>Toggles the given string range between having a hyperlink and not</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Fonts" name="task_Working with Fonts"></a>
+						<h3 class="subsubtitle task-title">Working with Fonts</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceFont:inRange:">&ndash;&nbsp;replaceFont:inRange:</a></code>
+		<span class="tooltip"><p>Replacing the <code>UIFont</code> for a range</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateAndUpdateFontInRange:block:">&ndash;&nbsp;enumerateAndUpdateFontInRange:block:</a></code>
+		<span class="tooltip"><p>Enumerates the font styles for a given range. If the block returns <code>YES</code> then the font will be updated with changes made to the fontDescriptor parameter.
+Note: This does not extend the range to include full paragraphs as <a href="#//api/name/enumerateAndUpdateParagraphStylesInRange:block:">enumerateAndUpdateParagraphStylesInRange:block:</a> does.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Paragraph Styles" name="task_Working with Paragraph Styles"></a>
+						<h3 class="subsubtitle task-title">Working with Paragraph Styles</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateAndUpdateParagraphStylesInRange:block:">&ndash;&nbsp;enumerateAndUpdateParagraphStylesInRange:block:</a></code>
+		<span class="tooltip"><p>Enumerates the paragraph styles for a given range extended to contain full paragraphs. If the block returns <code>YES</code> then the paragraph style for the paragraph is updated with changes made to the paragraphStyle parameter.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleParagraphSpacing:atIndex:">&ndash;&nbsp;toggleParagraphSpacing:atIndex:</a></code>
+		<span class="tooltip"><p>Sets or removes the space following the paragraph at the given index</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/correctParagraphSpacingForRange:">&ndash;&nbsp;correctParagraphSpacingForRange:</a></code>
+		<span class="tooltip"><p>Method to correct paragraph styles on paragraphs belonging to list</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Lists" name="task_Working with Lists"></a>
+						<h3 class="subsubtitle task-title">Working with Lists</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleListStyle:inRange:numberFrom:">&ndash;&nbsp;toggleListStyle:inRange:numberFrom:</a></code>
+		<span class="tooltip"><p>Convenience method to toggle list styling on entire paragraphs</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Marking Ranges" name="task_Marking Ranges"></a>
+						<h3 class="subsubtitle task-title">Marking Ranges</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addMarkersForSelectionRange:">&ndash;&nbsp;addMarkersForSelectionRange:</a></code>
+		<span class="tooltip"><p>Adding a marked range</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markedRangeRemove:">&ndash;&nbsp;markedRangeRemove:</a></code>
+		<span class="tooltip"><p>Removing the marking from a marked range</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addMarkersForSelectionRange:" title="addMarkersForSelectionRange:"></a>
+	<h3 class="subsubtitle method-title">addMarkersForSelectionRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adding a marked range</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addMarkersForSelectionRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/correctParagraphSpacingForRange:" title="correctParagraphSpacingForRange:"></a>
+	<h3 class="subsubtitle method-title">correctParagraphSpacingForRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to correct paragraph styles on paragraphs belonging to list</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)correctParagraphSpacingForRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range to update</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> List support is not complete</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateAndUpdateFontInRange:block:" title="enumerateAndUpdateFontInRange:block:"></a>
+	<h3 class="subsubtitle method-title">enumerateAndUpdateFontInRange:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates the font styles for a given range. If the block returns <code>YES</code> then the font will be updated with changes made to the fontDescriptor parameter.
+Note: This does not extend the range to include full paragraphs as <a href="#//api/name/enumerateAndUpdateParagraphStylesInRange:block:">enumerateAndUpdateParagraphStylesInRange:block:</a> does.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)enumerateAndUpdateFontInRange:(NSRange)<em>range</em> block:(NSMutableAttributedStringFontStyleEnumerationBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range to update</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute for each font range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if at least one font has been updated</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateAndUpdateParagraphStylesInRange:block:" title="enumerateAndUpdateParagraphStylesInRange:block:"></a>
+	<h3 class="subsubtitle method-title">enumerateAndUpdateParagraphStylesInRange:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enumerates the paragraph styles for a given range extended to contain full paragraphs. If the block returns <code>YES</code> then the paragraph style for the paragraph is updated with changes made to the paragraphStyle parameter.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)enumerateAndUpdateParagraphStylesInRange:(NSRange)<em>range</em> block:(NSMutableAttributedStringParagraphStyleEnumerationBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range to update</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute for each paragraph</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if at least one paragraph has been updated</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markedRangeRemove:" title="markedRangeRemove:"></a>
+	<h3 class="subsubtitle method-title">markedRangeRemove:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removing the marking from a marked range</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSRange)markedRangeRemove:(BOOL)<em>remove</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>remove</em></dt>
+			<dd><p><code>YES</code> if the marking should be cleared</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The range that is marked</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceFont:inRange:" title="replaceFont:inRange:"></a>
+	<h3 class="subsubtitle method-title">replaceFont:inRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replacing the <code>UIFont</code> for a range</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)replaceFont:(UIFont *)<em>font</em> inRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>font</em></dt>
+			<dd><p>The replacement front</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range to repace the font in</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceRange:withAttachment:inParagraph:" title="replaceRange:withAttachment:inParagraph:"></a>
+	<h3 class="subsubtitle method-title">replaceRange:withAttachment:inParagraph:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method to insert a DTTextAttachment.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)replaceRange:(NSRange)<em>range</em> withAttachment:(DTTextAttachment *)<em>attachment</em> inParagraph:(BOOL)<em>inParagraph</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The string range to insert the attachment at</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attachment</em></dt>
+			<dd><p>The text attachment to insert</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>inParagraph</em></dt>
+			<dd><p><code>YES</code> if the attachment should be placed in its own paragraph, <code>NO</code> to place it inline</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The length of the replacement string to allow for moving the cursor appropriately</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleBoldInRange:" title="toggleBoldInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleBoldInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the given string range between bold and non-bold.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleBoldInRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleHighlightInRange:color:" title="toggleHighlightInRange:color:"></a>
+	<h3 class="subsubtitle method-title">toggleHighlightInRange:color:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the given string range between highlighted and non-highlighted.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleHighlightInRange:(NSRange)<em>range</em> color:(UIColor *)<em>color</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The color to apply for the highlight</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The color parameter is ignored if the method call toggles a previous URL off.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleHyperlinkInRange:URL:" title="toggleHyperlinkInRange:URL:"></a>
+	<h3 class="subsubtitle method-title">toggleHyperlinkInRange:URL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the given string range between having a hyperlink and not</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleHyperlinkInRange:(NSRange)<em>range</em> URL:(NSURL *)<em>URL</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The hyperlink URL to apply for the string</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The URL parameter is ignored if the method call toggles a previous URL off.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleItalicInRange:" title="toggleItalicInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleItalicInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the given string range between italic and non-italic.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleItalicInRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleListStyle:inRange:numberFrom:" title="toggleListStyle:inRange:numberFrom:"></a>
+	<h3 class="subsubtitle method-title">toggleListStyle:inRange:numberFrom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method to toggle list styling on entire paragraphs</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleListStyle:(DTCSSListStyle *)<em>listStyle</em> inRange:(NSRange)<em>range</em> numberFrom:(NSInteger)<em>nextItemNumber</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listStyle</em></dt>
+			<dd><p>The list style to toggle</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The range to update</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nextItemNumber</em></dt>
+			<dd><p>For numbered lists this is the next number to use</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If there is already a list style at the begin of the specified range then it is removed.</p><div class="note"><p><strong>Note:</strong> List support is not complete</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleParagraphSpacing:atIndex:" title="toggleParagraphSpacing:atIndex:"></a>
+	<h3 class="subsubtitle method-title">toggleParagraphSpacing:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets or removes the space following the paragraph at the given index</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleParagraphSpacing:(BOOL)<em>spaceOn</em> atIndex:(NSUInteger)<em>index</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceOn</em></dt>
+			<dd><p>If yes then the default paragraph space is added</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The string index in the affected paragraph</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleUnderlineInRange:" title="toggleUnderlineInRange:"></a>
+	<h3 class="subsubtitle method-title">toggleUnderlineInRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the given string range between underline and non-underline.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)toggleUnderlineInRange:(NSRange)<em>range</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>The affected string range</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSMutableAttributedString+DTRichText.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cocoanetics. All rights reserved. (Last updated: 2013-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

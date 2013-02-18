@@ -1,0 +1,1021 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DTTextSelectionView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">DTRichTextEditor </a></h1>
+				<a id="developerHome" href="../index.html">Cocoanetics</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DTTextSelectionView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cursorColor">&nbsp;&nbsp;&nbsp;&nbsp;cursorColor</option>
+	
+	<option value="//api/name/dragHandleLeft">&nbsp;&nbsp;&nbsp;&nbsp;dragHandleLeft</option>
+	
+	<option value="//api/name/dragHandleRight">&nbsp;&nbsp;&nbsp;&nbsp;dragHandleRight</option>
+	
+	<option value="//api/name/dragHandlesVisible">&nbsp;&nbsp;&nbsp;&nbsp;dragHandlesVisible</option>
+	
+	<option value="//api/name/selectionRectangles">&nbsp;&nbsp;&nbsp;&nbsp;selectionRectangles</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;style</option>
+	
+	<option value="//api/name/textView">&nbsp;&nbsp;&nbsp;&nbsp;textView</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/beginCaretRect">&nbsp;&nbsp;&nbsp;&nbsp;- beginCaretRect</option>
+	
+	<option value="//api/name/endCaretRect">&nbsp;&nbsp;&nbsp;&nbsp;- endCaretRect</option>
+	
+	<option value="//api/name/initWithTextView:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTextView:</option>
+	
+	<option value="//api/name/layoutSubviewsInRect:">&nbsp;&nbsp;&nbsp;&nbsp;- layoutSubviewsInRect:</option>
+	
+	<option value="//api/name/selectionEnvelope">&nbsp;&nbsp;&nbsp;&nbsp;- selectionEnvelope</option>
+	
+	<option value="//api/name/setDragHandlesVisible:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setDragHandlesVisible:animated:</option>
+	
+	<option value="//api/name/setSelectionRectangles:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setSelectionRectangles:animated:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a Selection View">Creating a Selection View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Subviews">Accessing Subviews</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing the Look">Customizing the Look</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Selection Rectangles">Working with Selection Rectangles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Drag Handles">Working with Drag Handles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Information">Getting Information</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Layout">Layout</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cursorColor">cursorColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dragHandleLeft">dragHandleLeft</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dragHandleRight">dragHandleRight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dragHandlesVisible">dragHandlesVisible</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionRectangles">selectionRectangles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textView">textView</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginCaretRect">beginCaretRect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endCaretRect">endCaretRect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTextView:">initWithTextView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layoutSubviewsInRect:">layoutSubviewsInRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionEnvelope">selectionEnvelope</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDragHandlesVisible:animated:">setDragHandlesVisible:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSelectionRectangles:animated:">setSelectionRectangles:animated:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DTTextSelectionView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DTTextSelectionView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DTTextSelectionView.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A view that shows selection rectangles for an editor.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a Selection View" name="task_Creating a Selection View"></a>
+						<h3 class="subsubtitle task-title">Creating a Selection View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTextView:">&ndash;&nbsp;initWithTextView:</a></code>
+		<span class="tooltip"><p>Designated Initializer. Creates a selection view for a given text view</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Subviews" name="task_Accessing Subviews"></a>
+						<h3 class="subsubtitle task-title">Accessing Subviews</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textView">&nbsp;&nbsp;textView</a></code>
+		<span class="tooltip"><p>The text view that the receiver belongs to</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dragHandleLeft">&nbsp;&nbsp;dragHandleLeft</a></code>
+		<span class="tooltip"><p>The image view that represents the left drag handle.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dragHandleRight">&nbsp;&nbsp;dragHandleRight</a></code>
+		<span class="tooltip"><p>The image view that represents the right drag handle.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing the Look" name="task_Customizing the Look"></a>
+						<h3 class="subsubtitle task-title">Customizing the Look</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&nbsp;&nbsp;style</a></code>
+		<span class="tooltip"><p>The current selection style of the receiver.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cursorColor">&nbsp;&nbsp;cursorColor</a></code>
+		<span class="tooltip"><p>The caret color to use next to the ranged selection drag handles</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Selection Rectangles" name="task_Working with Selection Rectangles"></a>
+						<h3 class="subsubtitle task-title">Working with Selection Rectangles</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionRectangles">&nbsp;&nbsp;selectionRectangles</a></code>
+		<span class="tooltip"><p>The selection rectangles to display in the receiver</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSelectionRectangles:animated:">&ndash;&nbsp;setSelectionRectangles:animated:</a></code>
+		<span class="tooltip"><p>Customized setter for <a href="#//api/name/selectionRectangles">selectionRectangles</a> that optionally animates the selection change</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Drag Handles" name="task_Working with Drag Handles"></a>
+						<h3 class="subsubtitle task-title">Working with Drag Handles</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dragHandlesVisible">&nbsp;&nbsp;dragHandlesVisible</a></code>
+		<span class="tooltip"><p>Specifies whether the drag handles are visible</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDragHandlesVisible:animated:">&ndash;&nbsp;setDragHandlesVisible:animated:</a></code>
+		<span class="tooltip"><p>Customized setter to optionally show/hide the drag handles with a fading animation</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting Information" name="task_Getting Information"></a>
+						<h3 class="subsubtitle task-title">Getting Information</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginCaretRect">&ndash;&nbsp;beginCaretRect</a></code>
+		<span class="tooltip"><p>The frame rectangle of the beginning caret of a selected range</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endCaretRect">&ndash;&nbsp;endCaretRect</a></code>
+		<span class="tooltip"><p>The frame rectangle of the ending caret of a selected range</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionEnvelope">&ndash;&nbsp;selectionEnvelope</a></code>
+		<span class="tooltip"><p>A frame rectangle the envelops the entire selection</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Layout" name="task_Layout"></a>
+						<h3 class="subsubtitle task-title">Layout</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layoutSubviewsInRect:">&ndash;&nbsp;layoutSubviewsInRect:</a></code>
+		<span class="tooltip"><p>Lays out the subviews of the receiver with a provided visible rectangle</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cursorColor" title="cursorColor"></a>
+	<h3 class="subsubtitle method-title">cursorColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The caret color to use next to the ranged selection drag handles</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *cursorColor</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dragHandleLeft" title="dragHandleLeft"></a>
+	<h3 class="subsubtitle method-title">dragHandleLeft</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The image view that represents the left drag handle.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIImageView *dragHandleLeft</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dragHandleRight" title="dragHandleRight"></a>
+	<h3 class="subsubtitle method-title">dragHandleRight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The image view that represents the right drag handle.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIImageView *dragHandleRight</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dragHandlesVisible" title="dragHandlesVisible"></a>
+	<h3 class="subsubtitle method-title">dragHandlesVisible</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies whether the drag handles are visible</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL dragHandlesVisible</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionRectangles" title="selectionRectangles"></a>
+	<h3 class="subsubtitle method-title">selectionRectangles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The selection rectangles to display in the receiver</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSArray *selectionRectangles</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current selection style of the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) DTTextSelectionStyle style</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Support are blue selection and green marking style.</p>
+
+<ul>
+<li>DTTextSelectionStyleSelection</li>
+<li>DTTextSelectionStyleMarking</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textView" title="textView"></a>
+	<h3 class="subsubtitle method-title">textView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text view that the receiver belongs to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *textView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/beginCaretRect" title="beginCaretRect"></a>
+	<h3 class="subsubtitle method-title">beginCaretRect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The frame rectangle of the beginning caret of a selected range</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGRect)beginCaretRect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endCaretRect" title="endCaretRect"></a>
+	<h3 class="subsubtitle method-title">endCaretRect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The frame rectangle of the ending caret of a selected range</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGRect)endCaretRect</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTextView:" title="initWithTextView:"></a>
+	<h3 class="subsubtitle method-title">initWithTextView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated Initializer. Creates a selection view for a given text view</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithTextView:(UIView *)<em>view</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The text view that this selection view shows selections for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized selection view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layoutSubviewsInRect:" title="layoutSubviewsInRect:"></a>
+	<h3 class="subsubtitle method-title">layoutSubviewsInRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lays out the subviews of the receiver with a provided visible rectangle</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)layoutSubviewsInRect:(CGRect)<em>rect</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The rectangle in which to lay out the subviews</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionEnvelope" title="selectionEnvelope"></a>
+	<h3 class="subsubtitle method-title">selectionEnvelope</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A frame rectangle the envelops the entire selection</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (CGRect)selectionEnvelope</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDragHandlesVisible:animated:" title="setDragHandlesVisible:animated:"></a>
+	<h3 class="subsubtitle method-title">setDragHandlesVisible:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Customized setter to optionally show/hide the drag handles with a fading animation</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setDragHandlesVisible:(BOOL)<em>dragHandlesVisible</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dragHandlesVisible</em></dt>
+			<dd><p><code>YES</code> to make the drag handles visible, <code>NO</code> to hide them</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Whether the change of visibility of the drag handles should be animated</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSelectionRectangles:animated:" title="setSelectionRectangles:animated:"></a>
+	<h3 class="subsubtitle method-title">setSelectionRectangles:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Customized setter for <a href="#//api/name/selectionRectangles">selectionRectangles</a> that optionally animates the selection change</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setSelectionRectangles:(NSArray *)<em>selectionRectangles</em> animated:(BOOL)<em>animated</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selectionRectangles</em></dt>
+			<dd><p>The selection rectangles to set</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Whether the change of selection rectangles should be animated</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTTextSelectionView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cocoanetics. All rights reserved. (Last updated: 2013-02-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
